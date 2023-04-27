@@ -61,7 +61,7 @@
         </div>       
       </section>
        <!-- Modal window -->
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop" data-modal>
           <div class="modal">
             <button class="modal-close-button" type="button" data-modal-close>
               <svg class="modal-icon" width="8" height="8">
@@ -72,24 +72,31 @@
             <form>              
               <label class="modal-info">Name
               <div class="modal-wrapper">
-                <input type="text" name="user_name" class="modal-text"/><svg class="modal-img" width="12" height="12">
+                <input type="text" name="user_name" class="modal-input" autofocus required pattern="[a-zA-Zа-яА-ЯіІїЇ]+" minlength="2"/><svg class="modal-img" width="12" height="12">
                   <use href="./images/icon.svg#icon-person-black-18dp-1"></use>
                 </svg>
               </div></label>
               <label class="modal-info">Phone
               <div class="modal-wrapper">
-                <input type="tel" name="user_phone" class="modal-text"/><svg class="modal-img" width="13" height="13">
+                <input type="tel" name="user_phone" class="modal-input" required pattern="[0-9]{3}-[0-9]{3}[0-9{2}[0-9]{2}]" title="xxx-xxx-xx-xx"/><svg class="modal-img" width="13" height="13">
                   <use href="./images/icon.svg#icon-email-black-18dp-1"></use>
                 </svg>
               </div></label>
               <label class="modal-info">Email
               <div class="modal-wrapper">
-                <input type="email" name="user_email" class="modal-text"/><svg class="modal-img" width="15" height="12">
+                <input type="email" name="user_email" class="modal-input"/><svg class="modal-img" width="15" height="12">
                   <use href="./images/icon.svg#icon-phone-black-18dp-1"></use>
                 </svg>
               </div></label>
               <label class="modal-info" class="modal-text">Comment
               <textarea name="" id="" cols="30" rows="10" placeholder="Text input" class="modal-comment"></textarea></label>
+              <label>
+                <div class="modal-wrapper terms">
+                  <input type="checkbox" name="terms_and_conditions" value="agree" />
+                  <span class="modal-checkbox">I accept the terms and conditions of the <a href="" class="modal-link">Privacy Policy</a></span>                  
+                </div>
+              </label>
+              <button type="submit" class="button-order" name="Submit" value="">Send</button>
             </form>
           </div>
         </div>
