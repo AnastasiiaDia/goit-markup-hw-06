@@ -406,14 +406,11 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
-  /* width: 168px;
-  height: 88px; */
-}
+ }
 
 .customers-list {  
   display: flex;
   gap: 24;
-  
   }
 .customers-item {
 width: 168px;
@@ -448,13 +445,6 @@ transition: var(--transition-dur-and-func);
   fill: var(--pressed-state-color);
 }
 
-
-/* .team-wrapper::after {
-  content: "";
-  display: flex;
-  width: 24px;
-  height: 24px;
-} */
 .list-of-sm {
   display: flex;
 }
@@ -518,8 +508,6 @@ margin-right: 80px;
 transition: background-color var(--transition-dur-and-func);
 }
 .footer-sm-list {
-  /* position: relative; */
-  /* width: 232px; */
   height: 40px;  
   display: flex;
   gap: 16px;
@@ -537,10 +525,8 @@ transition: background-color var(--transition-dur-and-func);
   gap: 24px;
   align-items: center;
   justify-content: center;
-  /* position: absolute; */
-}
+  }
 .subscribe-email {
-/* position: absolute; */
 top: 0;
 left: 0;
 width: 264px;
@@ -661,7 +647,6 @@ button {
     background-color: var(--primary-brand-color);
     bottom: 0;
     left: 0;
-    /* overflow: auto; */
     padding: 40px 32px;
     transform: translateY(100%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -719,11 +704,7 @@ button {
     border-radius: 4px; 
     padding: 72px 24px 24px 24px;   
     transform: translate(-50%, -50%);
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;     */
-    
-  }
+    }
    .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -763,37 +744,29 @@ button {
     fill: var(--white-background-color);
   }
   .modal-title {
+    display: block;
     margin-top: 0;
+    margin-bottom: 16px;
     font-size: 16px;
     font-weight: 500;    
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-header-color);
   }
-  /* .modal-form {
-    display: flex;
-    flex-direction: column;
-  } */
-  .modal-info {
-    /* display: inline-block; */
+    .modal-info {
+    display: block;
     font-size: 12px;
     line-height: 1.17;  
     letter-spacing: 0.04em; 
     color: var(--customers-icon-color);
     width: 100%;
-    height: 40px;
-  }
+    /* height: 40px; */
+    margin-bottom: 4px;
+   }
   .modal-wrapper {
-    position: relative;
-    display: flex;
-    gap: 8px;
+    position: relative;    
     margin-bottom: 8px;
-    /* flex-wrap: nowrap; */ 
-    /* position: relative; */
-    /* padding-top: -28px;
-    padding-bottom: -28px;
-    padding-left: -39px; */
-  }
+    }
   .modal-wrapper-agreement {
     position: relative;
     display: flex;
@@ -808,40 +781,20 @@ button {
     border-radius: 4px; 
     padding-left: 38px;
     transition: border-color var(--transition-dur-and-func);   
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-  }
+   }
   .modal-input:focus {
     outline: none;
     border-color: var(--primary-brand-color);
   }
-  
-  .modal-form-input-desc {
-    display: block;
-    margin-bottom: 4px;
-  }
+
   .modal-img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  /* .modal-form-input-desc {
-    display: block;
-     font-size: 12px;
-    line-height: 1.17;  
-    letter-spacing: 0.04em; 
-    color: var(--customers-icon-color);
-    width: 100%;
-    height: 40px;
-  } */
-  /* input:focus, */
-  /* input:focus {
-   border: var(--primary-brand-color);
-  } */
+   
   .modal-input:focus + .modal-img {
     fill: var(--primary-brand-color);
   }
-  .modal-comment {
+  .user-message {
     /* position: absolute;
     top: 216px; */
     width: 100%;
@@ -857,7 +810,7 @@ button {
     font-size: 12px;
     line-height: 14px;       
   }
-  .modal-comment:focus {
+  .user-message:focus {
     outline: none;
     border-color: var(--primary-brand-color);
   }
@@ -877,7 +830,6 @@ button {
     color: var(--customers-icon-color);    
   }
   .modal-form-agreement-box {
-    /* position: absolute; */
     appearance: none;
     width: 16px;
     height: 16px;
