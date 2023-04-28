@@ -883,11 +883,23 @@ button {
     height: 16px;
     border: 1px solid var(--customers-icon-color);
     border-radius: 2px;
-    transition: var(--transition-dur-and-func);
-  }
+    cursor: pointer;    
+    transition:  background-color var(--transition-dur-and-func);
+    }
   .modal-form-agreement-box:checked {
-    background-color: var(--pressed-state-color);
+    background-color: var(--pressed-state-color);    
+  } 
+   .agree-vector {
+      position: absolute;
+      top: 4px;
+      left: 3px;
+      opacity: 0;
+    }
+   
+  .modal-form-agreement-box:checked + .agree-vector {
+  opacity: 1;  
   }
+   
   .modal-link {
     color: var(--primary-brand-color);
     text-decoration: underline;
@@ -918,8 +930,4 @@ button {
     .modal-button-send:active {
       background-color: var(--pressed-state-color);
     }
-    .agree-vector {
-      position: absolute;
-      top: 4px;
-      left: 3px;
-    }
+   
