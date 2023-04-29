@@ -88,9 +88,9 @@
                   <use href="./images/icon.svg#icon-email-black-18dp-1"></use>
                 </svg>
               </div>
-              <label class="modal-info" class="modal-text" for="user_message">Comment</label>
+              <label class="modal-info" for="user_message">Comment</label>
               <textarea name="user-message" placeholder="Text input" class="user-message" name="user-message"></textarea>
-              <label>
+              <label class="modal-info">
                 <div class="modal-wrapper-agreement">
                   <input class="modal-form-agreement-box" type="checkbox" name="user_agreement" value="agree" /><svg class="agree-vector" width="10" height="8"><use href="./images/icon.svg#icon-Vector"></use></svg>
                   <span class="modal-checkbox">I accept the terms and conditions of the <a href="" class="modal-link">Privacy Policy</a></span>                  
@@ -398,7 +398,8 @@
           <form name="Subscribe">          
             <p class="footer-title-sm">Subscribe</p>       
               <div class="subscribe-footer">
-                <input type="email" name="email" class="subscribe-email" placeholder="E-mail" />
+                <label class="visually-hidden" for="email">Email</label>
+                <input type="email" name="email" class="subscribe-email" id="email" placeholder="E-mail" />
                 <button type="submit" class="subscribe-btn">Subscribe<svg width="24" height="20">
                 <use href="./images/icon.svg#icon-Telegram"></use></svg>
               </button>                     
